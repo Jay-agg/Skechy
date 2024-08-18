@@ -41,8 +41,8 @@ Ensure you have the following installed on your system:
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/jatin1510/miro-clone
-   cd miro-clone
+   git clone https://github.com/Jay-agg/Skechy
+   cd sketchy
    ```
 
 2. **Install dependencies:**
