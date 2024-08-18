@@ -1,11 +1,18 @@
-# Miro Clone
+Here's a README for your SaaS automation builder named **Sketchy**:
 
-This project is a clone of the popular Miro whiteboard application, built using modern web technologies and tools. Follow the tutorial by [Code with Antonio](https://www.youtube.com/@codewithantonio) to create your own collaborative whiteboard app.
+---
 
-|<img width="1439" alt="image" src="https://github.com/jatin1510/miro-clone/assets/72184476/02756b9e-7a33-4bf6-933e-d4119d16153d">|
-|-|
-|<img width="1440" alt="image" src="https://github.com/jatin1510/miro-clone/assets/72184476/3c038d07-457e-44da-8019-15330ca4ecc8">|
-|<img width="1440" alt="image" src="https://github.com/jatin1510/miro-clone/assets/72184476/8df60147-bb35-4a2b-aaa7-73161cd9d1b5">|
+# Sketchy
+
+**Sketchy** is a powerful SaaS automation builder designed to streamline and automate complex workflows. With real-time collaboration, an intuitive interface, and scalable backend support, Sketchy empowers teams to build and manage automated processes efficiently.
+
+## Screenshots
+
+![Login](./public/Sketchy%20Login.png)
+![Dashboard](./public/Sketchy%20Dashboard.png)
+![Drawboard](./public/Sketchy%20Drawboard.png)
+![Invite](./public/Sketchy%20Invite.png)
+![Loading](./public/Sketchy%20Loading.png)
 
 ## Tech Stack
 
@@ -16,15 +23,15 @@ This project is a clone of the popular Miro whiteboard application, built using 
 
 ## Deployment
 
-The application is deployed on Vercel. Check it out [here](https://miro-clone-chi.vercel.app).
+The application is deployed on Vercel. Check it out [here](https://skechy.vercel.app/).
 
 ## Getting Started
 
-Follow these instructions to set up the project locally.
+Follow these instructions to set up Sketchy locally.
 
 ### Prerequisites
 
-Make sure you have the following installed on your system:
+Ensure you have the following installed on your system:
 
 - Node.js (>= 14.x)
 - npm
@@ -33,81 +40,77 @@ Make sure you have the following installed on your system:
 
 1. **Clone the repository:**
 
-    ```sh
-    git clone https://github.com/jatin1510/miro-clone
-    cd miro-clone
-    ```
+   ```sh
+   git clone https://github.com/jatin1510/miro-clone
+   cd miro-clone
+   ```
 
 2. **Install dependencies:**
 
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 3. **Configure environment variables:**
 
-    Create a `.env.local` file in the root directory and add your configuration variables. You can explore the `.env.example` file for more information.
+   Create a `.env.local` file in the root directory and add your configuration variables. You can explore the `.env.example` file for more information.
 
 4. **Clerk Setup**
+
    - Enable Organization from the "Organization settings"
-   - Add JWT Template named "convex" <img width="792" alt="image" src="https://github.com/jatin1510/miro-clone/assets/72184476/43e12f31-aa7c-4a51-b8f9-ffef2846f621">
-   - Make sure to have `org_id` and `org_role` inside **Claims** <img width="628" alt="image" src="https://github.com/jatin1510/miro-clone/assets/72184476/1536a650-4898-46e0-8e7c-3c2dc229688a">
-   - Don't forget to add issuer into the `auth.config.js` inside /convex.
+   - Add a JWT Template named "convex"
+   - Ensure `org_id` and `org_role` are inside **Claims**
+   - Add the issuer into the `auth.config.js` inside `/convex`.
 
 5. **Prepare the convex functions:**
-    ```sh
-    npx convex dev
-    ```
+
+   ```sh
+   npx convex dev
+   ```
 
 6. **Run the development server:**
 
-    ```sh
-    npm run dev
-    ```
+   ```sh
+   npm run dev
+   ```
 
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 ## Features
 
-- **Real-time collaboration**: Multiple users can interact on the whiteboard simultaneously.
-- **Interactive UI**: Intuitive and responsive user interface for a seamless experience.
-- **Scalable backend**: Powered by Convex for managing backend logic and data storage.
-- **Live updates**: Instant updates using Liveblocks for real-time synchronization.
+- **Real-time Collaboration**: Collaborate with team members in real time to build and refine automated workflows.
+- **Interactive UI**: An intuitive and responsive user interface for seamless workflow creation and management.
+- **Scalable Backend**: Powered by Convex for efficient backend logic and data storage.
+- **Live Updates**: Instant updates using Liveblocks for real-time synchronization across users.
 
 ### New Features
 
 - **Keyboard Shortcuts**:
-  - **Move Selected Layers**: Use keyboard shortcuts to move selected layers within the Canvas component.
-  - **Duplicate Layers**: Duplicate selected layers with `Ctrl + D`.
-  - **Focus Search Input**: Keyboard shortcut to focus on the search input field.
-  
 
-- **Enhanced Selection Tool**:
-  - **Improved Layout and Functionality**: Added a duplicate icon in the selection box for better usability.
-  - **Select Fully Inside Rectangle**: Layers are only selected if they are fully inside the selection rectangle.
-  - **Shortcuts for Layer Insertion**: Added keyboard shortcuts for selection and insertion in the toolbar
+  - **Move Selected Items**: Use keyboard shortcuts to move selected items within the workspace.
+  - **Duplicate Items**: Duplicate selected items with `Ctrl + D`.
+  - **Focus Search Input**: Quickly focus on the search input field using a keyboard shortcut.
 
-- **Board Creation Limit**:
-  - User can make only 5 boards within an organization
+- **Enhanced Workflow Tools**:
 
-- **Reset Camera**:
-  - When the user scrolls through the canvas, a button at the right bottom appears through which the user can reset the camera position
+  - **Improved Layout and Functionality**: Added icons and shortcuts for easier workflow management.
+  - **Precise Selection**: Items are selected only when fully enclosed within the selection area.
 
-- **Color Picker**:
-  - User now has infinite possible combinations of the layer they want. Color picker also has the debouncing technique to prevent the numerous undo/redo actions
+- **Workflow Limits**:
 
-- **Export as a PNG**:
-  - Users can now export their board as a PNG image file. This functionality allows users to save their work and share it with others easily.
+  - Users can create up to 5 workflows per organization to ensure efficient management.
+
+- **Reset View**:
+
+  - A reset button appears when scrolling through the workspace, allowing users to quickly return to the default view.
+
+- **Customizable Elements**:
+
+  - Utilize the color picker with debouncing to prevent unnecessary undo/redo actions and enable infinite color combinations for your workflow elements.
+
+- **Export as PNG**:
+
+  - Export your workflow as a PNG image file to share or archive your work easily.
 
 - **Bug Fixes**:
-  - **Search and Favorite Functionality**: Fixed the search and favorite functionality by using `useSearchParams`.
-
-## Tutorial
-
-This project follows the tutorial by [Code with Antonio](https://www.youtube.com/@codewithantonio). Watch the full tutorial on [YouTube](https://www.youtube.com/watch?v=ADJKbuayubE).
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
----
+  - **Search and Favorite Functionality**: Improved search and favorite functionality using `useSearchParams`.
