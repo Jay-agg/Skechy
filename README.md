@@ -1,7 +1,3 @@
-Here's a README for your SaaS automation builder named **Sketchy**:
-
----
-
 # Sketchy
 
 **Sketchy** is a powerful SaaS automation builder designed to streamline and automate complex workflows. With real-time collaboration, an intuitive interface, and scalable backend support, Sketchy empowers teams to build and manage automated processes efficiently.
