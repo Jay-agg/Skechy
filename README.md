@@ -1,6 +1,6 @@
 # Sketchy
 
-**Sketchy** is a powerful SaaS automation builder designed to streamline and automate complex workflows. With real-time collaboration, an intuitive interface, and scalable backend support, Sketchy empowers teams to build and manage automated processes efficiently.
+**Sketchy** is a real-time collaborative platform designed to facilitate teamwork through interactive whiteboards, drawing tools, shapes, and more. This workspace is ideal for brainstorming sessions, planning, and collaborative design.
 
 ## Screenshots
 
