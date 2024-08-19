@@ -107,6 +107,3 @@ Ensure you have the following installed on your system:
 - **Export as PNG**:
 
   - Export your workflow as a PNG image file to share or archive your work easily.
-
-- **Bug Fixes**:
-  - **Search and Favorite Functionality**: Improved search and favorite functionality using `useSearchParams`.
