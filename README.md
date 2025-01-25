@@ -2,7 +2,7 @@
 
 **Sketchy** is a real-time collaborative platform designed to facilitate teamwork through interactive whiteboards, drawing tools, shapes, and more. This workspace is ideal for brainstorming sessions, planning, and collaborative design.
 
-##[Video Demo](https://www.loom.com/share/26b41a9a4059473894a34373f93ffec3?sid=c60f6e79-e632-46e0-b29a-0c8987189d33)
+##Video Demo(https://www.loom.com/share/26b41a9a4059473894a34373f93ffec3?sid=c60f6e79-e632-46e0-b29a-0c8987189d33)
 
 ## Screenshots
 
